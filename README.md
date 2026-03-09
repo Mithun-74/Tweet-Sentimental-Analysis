@@ -1,53 +1,69 @@
-# Tweet Sentiment Analysis
+# 🧠 Twitter Sentiment Analyzer (LSTM + Gradio)
 
-This repository contains a simple Twitter sentiment analyzer built with TensorFlow and Gradio. The model classifies tweets as **Negative**, **Neutral**, or **Positive** based on an LSTM network.
+A deep learning based **Sentiment Analysis Web App** that classifies tweets into **Negative, Neutral, or Positive** sentiments using an **LSTM Neural Network**.
 
-## Features
+The model is trained on a large Twitter sentiment dataset and deployed as an interactive web application using **Gradio** and **Hugging Face Spaces**.
 
-- Pretrained Keras LSTM model (`sentiment_model.keras`)
-- Tokenizer for tweet preprocessing
-- Gradio web interface for interactive prediction
+---
 
-## Screenshot
+## 🚀 Live Demo
 
-![Gradio Interface](./img/screenshot.png)
+🔗 Hugging Face App:  
+https://huggingface.co/spaces/Mithun74/Tweet_Sentiment_Analysis
 
-> *Replace `img/screenshot.png` with the path to your actual screenshot file.*
+---
 
-## Description
+## 📌 Project Overview
 
-The `app.py` script loads the trained model and tokenizer, defines a `predict` function for processing text input, and launches a Gradio interface. When launched, open the provided URL in a browser to type or paste a tweet and receive a sentiment prediction.
+Social media platforms contain large amounts of user opinions.  
+This project builds an **AI-powered sentiment classifier** capable of analyzing tweets and predicting whether the sentiment is:
 
-## Running Locally
+- 😡 Negative
+- 😐 Neutral
+- 😊 Positive
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/<your-username>/Tweet_sentiment_analysis.git
-   cd Tweet_sentiment_analysis
-   ```
+The system uses **Natural Language Processing (NLP)** and **Deep Learning (LSTM)** to understand textual sentiment.
 
-2. Create and activate a virtual environment (Windows PowerShell example):
-   ```powershell
-   python -m venv .venv
-   .\.venv\Scripts\activate
-   pip install -r requirements.txt
-   ```
+---
 
-3. Start the app:
-   ```powershell
-   python app.py
-   ```
+## 📊 Dataset
 
-   Gradio will output a local URL (e.g. `http://127.0.0.1:7860`) where you can interact with the model.
+Dataset used:
 
-## Execution Link
+Sentiment Analysis Dataset from Kaggle
 
-Once running, use the link shown in the terminal to access the Gradio interface. An example is:
+🔗 https://www.kaggle.com/datasets/abdelmalekeladjelet/sentiment-analysis-dataset
 
-```
-http://127.0.0.1:7860
-```
+Dataset distribution:
 
-## License
+| Sentiment | Count |
+|----------|------|
+| Positive | 103059 |
+| Neutral | 82972 |
+| Negative | 55114 |
 
-This project is licensed under the MIT License.
+---
+
+## ⚙️ Model Architecture
+
+The model is built using **TensorFlow / Keras**.
+
+Pipeline:
+
+Text Input  
+↓  
+Text Cleaning  
+↓  
+Tokenizer  
+↓  
+Padding Sequences  
+↓  
+Embedding Layer  
+↓  
+Bidirectional LSTM  
+↓  
+Dense Layer  
+↓  
+Softmax Classification  
+
+### Neural Network
