@@ -9,7 +9,7 @@ The model is trained on a large Twitter sentiment dataset and deployed as an int
 ## 🚀 Live Demo
 
 🔗 Hugging Face App:  
-https://huggingface.co/spaces/Mithun74/Tweet_Sentiment_Analysis
+[https://huggingface.co/spaces/Mithun74/Tweet_Sentiment_Analysis](https://huggingface.co/spaces/Mithun74/Tweet_Sentimental_Analysis)
 
 ---
 
